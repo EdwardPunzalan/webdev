@@ -1,0 +1,66 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+.welcome {
+  display: grid;
+}
+
+ul {
+  padding: 0;
+}
+
+.navBar {
+  background-color: rgba(143, 167, 240, 0.2);
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  color: rgb(23, 6, 58);
+  gap: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .navBar {
+    font-size: 1.2em;
+    gap: 1rem;
+  }
+}
+
+.navLogo {
+  height: 2rem;
+  width: 2rem;
+}
+
+h1{
+  margin: 0px;
+  padding: 16rem;
+  grid-row: 1fr;
+  font-size: 3rem;
+  font-family: 'Roboto Mono', monospace;
+  color: royalblue;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+  font-family: 'Roboto Mono', monospace;
+  color: royalblue;
+  text-align: center;
+}
+
+hr {
+  margin: 20px auto;
+  color: #F05F44;
+  border: 3px solid #F05F44;
+  max-width: 65px;
+  opacity: 1;  
+}
