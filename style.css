@@ -3,6 +3,7 @@ html {
   width: 100%;
   height: 100%;
   font-family: 'Roboto Mono', monospace;
+  color: ghostwhite;
   background-image: linear-gradient(to bottom, #191a2e, #1a1b31, #1b1c33, #1c1e36, #1d1f39);
   /*Used https://mycolor.space/gradient3?ori=to+right+top&hex=%234DD7C2&hex2=%23972CEA&hex3=%233E139F&submit=submit to get 3 color gradient*/
   -webkit-background-size: cover;
@@ -10,10 +11,6 @@ html {
   -o-background-size: cover;
   background-size: cover;
   margin: 0;
-}
-
-.welcome {
-  display: grid;
 }
 
 ul {
@@ -24,7 +21,7 @@ ul {
   margin-top: 1rem;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   font-size: 1em;
   color: ghostwhite;
   gap: 3rem;
@@ -43,25 +40,41 @@ ul {
 }
 
 .navLogo:hover {
-  transform: scale(150%);
-  transition-duration: 3;
+  transform: scale(200%);
+}
+
+.welcome {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45rem;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  /*Grid made with https://cssgrid-generator.netlify.app/*/
+}
+
+.welcome1-1 { grid-area: 1 / 1 / 2 / 2; }
+.welcome1-2 { grid-area: 1 / 2 / 2 / 3; }
+
+.webex {
+  margin: auto;
 }
 
 h1{
   margin: 0px;
-  padding: 16rem;
-  grid-row: 1fr;
   font-size: 3rem;
   font-family: 'Roboto Mono', monospace;
-  color: #FF08E2;
-  text-align: center;
+  color: #2FFFAD;
 }
 
 h2 {
   font-size: 1rem;
   font-family: 'Roboto Mono', monospace;
-  color: #2FFFAD;
-  text-align: center;
+  color: #00FB96;
 }
 
 ul:hover > hr {
@@ -76,4 +89,12 @@ hr{
   background-color: transparent;
   margin: 0;
   border: none;
+}
+
+.sectionDiv {
+  width: 75%;
+  margin: auto;
+  height: 0.35rem;
+  background-image: linear-gradient(to right, #4dd7c2, #00c9da, #00b7f4, #009fff, #0080ff, #406af7, #634fea, #8026d7, #6f21c9, #5f1dbb, #4e18ad, #3e139f);
+  border-radius: 25px;
 }
