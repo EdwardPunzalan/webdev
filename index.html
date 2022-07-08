@@ -8,37 +8,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <!-- My Style Sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
     <body>
       <div class="navBar">
         <ul><a href="index.html"><img src="logo.png" class="navLogo"></a></ul>
-        <ul>Services<hr class="navChoice"></ul>
-        <ul>Testimonials<hr class="navChoice"></ul>
-        <ul>About<hr class="navChoice"></ul>
-        <ul>Contact<hr class="navChoice"></ul>
+        <div class="navItems">
+          <ul>Services<hr></ul>
+          <ul>Testimonials<hr></ul>
+          <ul><a href="about.html">About</a><hr></ul>
+          <ul>Contact<hr></ul>
+        </div>
       </div>
-      <div class="welcome">
+      <div class="section1">
         <div class="welcome1-1">
           <h1>EP Programming</h1>
           <h2>Professional Web Developer and Software Engineer</h2>
-          <p>Hi! My name is Edward Punzalan but most people call me Eddy! I am a software engineering major at Northwestern College (Orange City, IA). I am a college wrestler and spend most of my time training for my sport or writing code. If you would like to learn more about me click on the about tab above to learn more about me!</p><br>
-          <p>I have experience in the following languages:</p>
-          <ul>Java</ul>
-          <ul>HTML</ul>
-          <ul>CSS</ul>
-          <ul>Javascript</ul>
+          <p>Hi! My name is Edward Punzalan but most people call me Eddy! I am a software engineering major at Northwestern College (Orange City, IA). I am a college wrestler and spend most of my time training for my sport or writing code. If you would like to learn more click on the about tab above for more info on me!</p><br>
+          <p>I have experience in the following languages:</p><br>
+          <div class="codeIcons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="Java">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="Javascript">
+        </div>
       </div>
-        <img src="webex.png" class="welcome1-2 webex">
+        <img src="webex.svg" class="welcome1-2 webex">
       </div>
       <hr class="sectionDiv">
-<!--       <div>
-        <h3>Web Development</h3>
-        <p>Your ideas</p> 
-        <p>+</p> 
-        <p>my programming knowledge = your dream site</p>
-      </div> -->
+        <div class="section2">
+          <div class="webdev">
+            <h3 class="section2-1">Web Development</h3>
+            <div class="yourWeb section2-2">
+              <p class="pinkLeft">Your ideas&nbsp</p> 
+              <p class="greenBold">+&nbsp</p>
+              <p class="pink">My programming knowledge</p>
+              <p class="greenBold">&nbsp=</p>
+              <p class="purple">&nbspYour dream site!</p>
+          </div>
+          <div class="section2-3">
+            <p>Interested in starting your virtual journey?</p>
+            <p>Click here to learn more!</p>
+            <a href="">Let's Team Up!</a>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
